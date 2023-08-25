@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guitar Tabs</title>
+    <link href="Image/icon.png" rel="icon" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/98d921e819.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="jquery-3.7.0.min.js"></script>
+  </head>
+  <body>
+    <div class="loading-overlay">
+      <div class="loading-spinner"></div>
+    </div>
+    <div class="header_wrap">
+      <div class="num_rows">
+        <div class="form-group">
+          <select class="form-control" name="state" id="maxRows">
+            <option value="15">Show 15 Song</option>
+            <option value="50">Show 50 Song</option>
+            <option value="100">Show 100 Song</option>
+            <option value="150">Show 150 Song</option>
+            <option value="200">Show 200 Song</option>
+            <option value="350">Show All Song</option>
+          </select>
+        </div>
+      </div>
+      <div class="tb_search">
+        <input type="text" id="search_input_all" onkeyup="FilterkeyWord_all_table()" placeholder="Search Artist or Title...." class="form-control" />
+      </div>
+    </div>
+    <table class="table table-responsive table-striped table-hover" id="table-id">
+      <thead class="table-dark">
+        <tr>
+          <th>Artist</th>
+          <th>Title</th>
+          <th>Tabs</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <div class="d-flex justify-content-center mt-3">
+      <div id="pagination-container"></div>
+    </div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script>
+      $(document).ready(function () {
+        var tableData;
+        var pageSize = 15;
+        var currentPage = 1;
+
+        // Display the loading overlay
+        $('.loading-overlay').show();
+
+        // Load data from JSON file
+        $.getJSON('data.json', function (data) {
+          tableData = data;
+          updateTable();
+          renderPagination();
+
+          // Hide the loading overlay once the content is loaded
+          $('.loading-overlay').hide();
+        });
+
+        // Update table based on current page and search input
+        function updateTable() {
+          var searchInput = $('#search_input_all').val().toLowerCase();
+          var filteredData = tableData.filter(function (item) {
+            return item.artist.toLowerCase().includes(searchInput) || item.song.toLowerCase().includes(searchInput);
+          });
+
+          var startIndex = (currentPage - 1) * pageSize;
+          var endIndex = startIndex + pageSize;
+          var paginatedData = filteredData.slice(startIndex, endIndex);
+
+          var tableBody = $('#table-id tbody');
+          tableBody.empty();
+
+          for (var i = 0; i < paginatedData.length; i++) {
+            var row = $('<tr>');
+            row.append($('<td>').text(startIndex + i + 1));
+            row.append($('<td>').text(paginatedData[i].artist));
+            row.append($('<td>').text(paginatedData[i].song));
+
+            // Create a button to open PDF viewer with the corresponding URL
+            var pdfButton = $('<button>').addClass('btn btn-primary btn-sm').html('<i class="fas fa-paper-plane"></i> Tabs');
+            pdfButton.on('click', createPdfButtonHandler(paginatedData[i].tabs)); // Pass the PDF URL to the handler
+
+            row.append($('<td>').append(pdfButton));
+            tableBody.append(row);
+          }
+        }
+
+        function createPdfButtonHandler(pdfUrl) {
+          return function () {
+            window.open('pdfviewer.html?pdf=' + encodeURIComponent(pdfUrl), '_blank');
+          };
+        }
+
+        // Render pagination based on current page and total data count
+        function renderPagination() {
+          var totalData = tableData.length;
+          var totalPages = Math.ceil(totalData / pageSize);
+          var startIndex = (currentPage - 1) * pageSize + 1;
+          var endIndex = startIndex + pageSize - 1;
+          if (endIndex > totalData) {
+            endIndex = totalData;
+          }
+
+          var paginationContainer = $('#pagination-container');
+          paginationContainer.empty();
+
+          var previousButton = $('<button>').addClass('btn btn-warning').text('Previous');
+          var nextButton = $('<button>').addClass('btn btn-warning').text('Next');
+          var paginationInfo = $('<span>')
+            .addClass('text-white')
+            .text('Showing ' + startIndex + ' to ' + endIndex + ' of ' + totalData + ' entries');
+
+          previousButton.on('click', function () {
+            if (currentPage > 1) {
+              currentPage--;
+              updateTable();
+              renderPagination();
+            }
+          });
+
+          nextButton.on('click', function () {
+            if (currentPage < totalPages) {
+              currentPage++;
+              updateTable();
+              renderPagination();
+            }
+          });
+
+          if (currentPage === 1) {
+            previousButton.prop('disabled', true);
+          }
+
+          if (currentPage === totalPages) {
+            nextButton.prop('disabled', true);
+          }
+
+          paginationContainer.append(previousButton);
+          paginationContainer.append(paginationInfo);
+          paginationContainer.append(nextButton);
+        }
+
+        // Max rows event listener
+        $('#maxRows').on('change', function () {
+          pageSize = parseInt($(this).val());
+          currentPage = 1;
+          updateTable();
+          renderPagination();
+        });
+
+        // Search input event listener
+        $('#search_input_all').on('input', function () {
+          currentPage = 1;
+          updateTable();
+          renderPagination();
+        });
+      });
+    </script>
+  </body>
+</html>
