@@ -5,18 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PDF Viewer</title>
   </head>
-  <body>
-    <object data="" width="100%" height="1500px"></object>
+  <body style="margin: 0; overflow: hidden">
+    <iframe src="" style="width: 100%; height: 100vh; border: none"></iframe>
 
     <script>
       // Get the PDF URL parameter from the query string
       var pdfUrlParam = new URLSearchParams(window.location.search).get('pdf');
-      var pdfObject = document.querySelector('object');
+      var iframe = document.querySelector('iframe');
 
       if (pdfUrlParam) {
-        pdfObject.setAttribute('data', decodeURIComponent(pdfUrlParam));
+        var googleViewerUrl = 'https://docs.google.com/viewer?url=' + encodeURIComponent(pdfUrlParam) + '&embedded=true';
+        iframe.setAttribute('src', googleViewerUrl);
       } else {
-        pdfObject.innerHTML = 'No PDF URL provided.';
+        iframe.innerHTML = 'No PDF URL provided.';
       }
     </script>
   </body>
