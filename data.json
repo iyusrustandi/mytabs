@@ -6,6 +6,11 @@
   },
   {
     "artist": "Ada Band ",
+    "song": " Karena Wanita",
+    "tabs": "https://mytabs.vercel.app/Tabs/Ada Band - Karena Wanita.pdf"
+  },
+  {
+    "artist": "Ada Band ",
     "song": " Kau Auraku",
     "tabs": "https://mytabs.vercel.app/Tabs/Ada Band - Kau Auraku.pdf"
   },
@@ -228,6 +233,11 @@
     "artist": "Black Brothers ",
     "song": " Terjalin Kembali",
     "tabs": "https://mytabs.vercel.app/Tabs/Black Brothers - Terjalin Kembali.pdf"
+  },
+  {
+    "artist": "Blackout ",
+    "song": " Selalu Ada",
+    "tabs": "https://mytabs.vercel.app/Tabs/Blackout - Selalu Ada.pdf"
   },
   {
     "artist": "Blue ",
@@ -799,7 +809,7 @@
     "song": " Falling In Love",
     "tabs": "https://mytabs.vercel.app/Tabs/J-Rocks - Falling In Love.pdf"
   },
-    {
+  {
     "artist": "J-Rocks ",
     "song": " Lepaskan Diriku",
     "tabs": "https://mytabs.vercel.app/Tabs/J-Rocks - Lepaskan Diriku.pdf"
@@ -807,7 +817,7 @@
   {
     "artist": "J-Rocks ",
     "song": " Meraih Mimpi",
-    "tabs": "https://mytabs.vercel.app/Tabs/J-Rocks - Meraih Mimpi.pdf"
+    "tabs": "https://mytabs.vercel.app/Tabs/J-Rocks - Meaih Mimpi.pdf"
   },
   {
     "artist": "Kangen Band ",
@@ -1145,6 +1155,16 @@
     "tabs": "https://mytabs.vercel.app/Tabs/Melky Goeslaw - Pergi Untuk Kembali.pdf"
   },
   {
+    "artist": "Melly Goeslaw ",
+    "song": " Gantung",
+    "tabs": "https://mytabs.vercel.app/Tabs/Melly Goeslaw - Gantung.pdf"
+  },
+  {
+    "artist": "Melly Goeslaw ",
+    "song": " Ku Bahagia",
+    "tabs": "https://mytabs.vercel.app/Tabs/Melly Goeslaw - Ku Bahagia.pdf"
+  },
+  {
     "artist": "Muchsin Alatas ",
     "song": " Hilang Tak Berkesan",
     "tabs": "https://mytabs.vercel.app/Tabs/Muchsin Alatas - Hilang Tak Berkesan.pdf"
@@ -1395,6 +1415,11 @@
     "tabs": "https://mytabs.vercel.app/Tabs/Peterpan - Yang Terdalam.pdf"
   },
   {
+    "artist": "Projector Band ",
+    "song": " Sudah Kutahu",
+    "tabs": "https://mytabs.vercel.app/Tabs/Projector Band - Sudah Kutahu.pdf"
+  },
+  {
     "artist": "Pilot ",
     "song": " Sepanjang Hidupku",
     "tabs": "https://mytabs.vercel.app/Tabs/Pilot - Sepanjang Hidupku.pdf"
@@ -1558,6 +1583,11 @@
     "artist": "Sheila on7 ",
     "song": " Seberapa Pantas",
     "tabs": "https://mytabs.vercel.app/Tabs/Sheila on7 - Seberapa Pantas.pdf"
+  },
+  {
+    "artist": "Siti Nordiana & Achik",
+    "song": " Memeori Berkasih",
+    "tabs": "https://mytabs.vercel.app/Tabs/Siti Nordiana & Achik - Memeori Berkasih.pdf"
   },
   {
     "artist": "Slank ",
@@ -1841,6 +1871,11 @@
   },
   {
     "artist": "Ungu ",
+    "song": " Asmara Terindah",
+    "tabs": "https://mytabs.vercel.app/Tabs/Ungu - Asmara Terindah.pdf"
+  },
+  {
+    "artist": "Ungu ",
     "song": " Bila Tiba",
     "tabs": "https://mytabs.vercel.app/Tabs/Ungu - Bila Tiba.pdf"
   },
@@ -1858,6 +1893,11 @@
     "artist": "Ungu ",
     "song": " Dengan Nafasmu",
     "tabs": "https://mytabs.vercel.app/Tabs/Ungu - Dengan Nafasmu.pdf"
+  },
+  {
+    "artist": "Ungu ",
+    "song": " Dilema Cinta",
+    "tabs": "https://mytabs.vercel.app/Tabs/Ungu - Dilema Cinta.pdf"
   },
   {
     "artist": "Ungu ",
@@ -1908,6 +1948,11 @@
     "artist": "Ungu ",
     "song": " Terang Dalam Gelap",
     "tabs": "https://mytabs.vercel.app/Tabs/Ungu - Terang Dalam Gelap.pdf"
+  },
+  {
+    "artist": "Ungu ",
+    "song": " Tercipta Untukku",
+    "tabs": "https://mytabs.vercel.app/Tabs/Ungu - Tercipta Untukku.pdf"
   },
   {
     "artist": "Ungu ",
