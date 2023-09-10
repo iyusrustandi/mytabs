@@ -14,17 +14,15 @@ body {
 .chords {
   font-family: 'Courier New', Courier, monospace;
   white-space: pre-wrap;
-  padding: 1.5vw;
-  margin-top: 1vw;
   color: #000000;
   font-weight: bold;
   font-size: 2.3vw;
 }
 .tabs {
   font-family: 'Courier New', Courier, monospace;
-  padding: 1.5vw;
+
   white-space: pre-wrap;
-  margin-top: 1vw;
+
   color: #000000;
   font-weight: bold;
   font-size: 1.85vw;
