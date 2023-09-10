@@ -4,9 +4,12 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; */
-  background-color: #ffffff rgb(255, 255, 255);
-  margin: 0;
-  padding: 0;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 100%;
+  color: #000;
 }
 .chords {
   font-family: 'Courier New', Courier, monospace;
