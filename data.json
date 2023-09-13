@@ -904,6 +904,11 @@
     "song": " Demi Cinta",
     "tabs": "https://mytabs.vercel.app/Tabs/Kerispatih - Demi Cinta.pdf"
   },
+    {
+    "artist": "Kerispatih ",
+    "song": " Tapi Bukan Aku",
+    "tabs": "https://mytabs.vercel.app/Tabs/Kerispatih - Tapi Bukan Aku.pdf"
+  },
   {
     "artist": "Killing Me Inside ",
     "song": " Biarlah",
@@ -1252,7 +1257,7 @@
   {
     "artist": "Mulan Jameela ",
     "song": " Wonder Woman",
-    "tabs": "https://mytabs.vercel.app/Tab/mulan-jameela-wonder-woman.html"
+    "tabs": "https://mytabs.vercel.app/Tabs/Mulan Jameela - Wonder Woman.pdf"
   },
   {
     "artist": "Murry's Group ",
@@ -1444,6 +1449,11 @@
     "song": " Akhir Cinta",
     "tabs": "https://mytabs.vercel.app/Tabs/Panbers - Akhir Cinta.pdf"
   },
+    {
+    "artist": "Panbers ",
+    "song": " Akhir Cinta",
+    "tabs": "https://mytabs.vercel.app/Tabs/Panbers - Cinta Dan Permata.pdf"
+  },
   {
     "artist": "Panbers ",
     "song": " Gereja Tua",
@@ -1463,6 +1473,11 @@
     "artist": "Peter Maffay ",
     "song": " Du",
     "tabs": "https://mytabs.vercel.app/Tabs/Peter Maffay - Du.pdf"
+  },
+    {
+    "artist": "Peterpan ",
+    "song": " Ada Apa Denganmu",
+    "tabs": "https://mytabs.vercel.app/Tabs/Peterpan - Ada Apa Denganmu.pdf"
   },
   {
     "artist": "Peterpan ",
@@ -1839,6 +1854,11 @@
     "song": " Biarku Sendiri",
     "tabs": "https://mytabs.vercel.app/Tabs/The Mercy's - Biarku Sendiri.pdf"
   },
+    {
+    "artist": "The Mercy's ",
+    "song": " Biarku Sendiri",
+    "tabs": "https://mytabs.vercel.app/Tabs/The Mercy's - Bunga Mawar.pdf"
+  },
   {
     "artist": "The Mercy's ",
     "song": " Dalam Kerinduan",
@@ -2128,6 +2148,16 @@
     "artist": "Wali ",
     "song": " Cari Jodoh",
     "tabs": "https://mytabs.vercel.app/Tabs/Wali - Cari Jodoh.pdf"
+  },
+    {
+    "artist": "Wali ",
+    "song": " Baik Baik Sayang",
+    "tabs": "https://mytabs.vercel.app/Tabs/Wali - Dik.pdf"
+  },
+    {
+    "artist": "Wali ",
+    "song": " Baik Baik Sayang",
+    "tabs": "https://mytabs.vercel.app/Tabs/Wali - Harga Diriku.pdf"
   },
   {
     "artist": "Wali ",
