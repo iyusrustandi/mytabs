@@ -14,7 +14,7 @@
       var iframe = document.querySelector('iframe');
 
       if (pdfUrlParam) {
-        var googleViewerUrl = 'https://docs.google.com/viewer?url=' + encodeURIComponent(pdfUrlParam) + '&embedded=true';
+        var googleViewerUrl = 'https://docs.google.com/gview?embedded=true&url=' + encodeURIComponent(pdfUrlParam) + '&embedded=true';
         iframe.setAttribute('src', googleViewerUrl);
       } else {
         iframe.innerHTML = 'No PDF URL provided.';

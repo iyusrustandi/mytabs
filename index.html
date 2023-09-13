@@ -89,9 +89,12 @@
             row.append($('<td>').text(startIndex + i + 1));
             row.append($('<td>').text(paginatedData[i].artist));
             row.append($('<td>').text(paginatedData[i].song));
-            var lyricButton = $('<button>').addClass('btn btn-primary btn-sm').html('<i class="fas fa-paper-plane"></i> Tabs');
-            lyricButton.attr('onclick', 'window.open("' + paginatedData[i].tabs + '","_blank")');
-            row.append($('<td>').append(lyricButton));
+
+            // Create a button to open PDF viewer with the corresponding URL
+            var pdfButton = $('<button>').addClass('btn btn-primary btn-sm').html('<i class="fas fa-paper-plane"></i> Tabs');
+            pdfButton.on('click', createPdfButtonHandler(paginatedData[i].tabs)); // Pass the PDF URL to the handler
+
+            row.append($('<td>').append(pdfButton));
             tableBody.append(row);
           }
         }
