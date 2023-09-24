@@ -261,10 +261,25 @@
   },
   {
     "artist": "Bonjovi ",
+    "song": " Always",
+    "tabs": "https://mytabs.vercel.app/Tabs/Bonjovi - Always.pdf"
+  },
+  {
+    "artist": "Bonjovi ",
     "song": " Bed Of Roses",
     "tabs": "https://mytabs.vercel.app/Tabs/Bonjovi - Bed Of Roses.pdf"
   },
     {
+    "artist": "Bonjovi ",
+    "song": " I'll Be There For You",
+    "tabs": "https://mytabs.vercel.app/Tabs/Bonjovi - I'll Be There For You.pdf"
+  },
+  {
+    "artist": "Bonjovi ",
+    "song": " It's My Life",
+    "tabs": "https://mytabs.vercel.app/Tabs/Bonjovi - It's My Life.pdf"
+  },
+  {
     "artist": "Bonjovi ",
     "song": " Never Say Goodbye",
     "tabs": "https://mytabs.vercel.app/Tabs/Bonjovi - Never Say Goodbye.pdf"
@@ -514,6 +529,11 @@
     "song": " Soldier Of Fortune",
     "tabs": "https://mytabs.vercel.app/Tabs/Deep Purple - Soldier Of Fortune.pdf"
   },
+   {
+    "artist": "Deep Purple ",
+    "song": " When A Blind Man Cries",
+    "tabs": "https://mytabs.vercel.app/Tabs/Deep Purple - When A Blind Man Cries.pdf"
+  },
   {
     "artist": "Desy Ratnasari ",
     "song": " Tenda Biru",
@@ -645,6 +665,11 @@
     "tabs": "https://mytabs.vercel.app/Tabs/Dpaspor - Rinduku.pdf"
   },
   {
+    "artist": "Drive ",
+    "song": " Melepasmu",
+    "tabs": "https://mytabs.vercel.app/Tabs/Drive - Melepasmu.pdf"
+  },
+  {
     "artist": "Ebiet G Ade ",
     "song": " Camelia 2",
     "tabs": "https://mytabs.vercel.app/Tabs/Ebiet G Ade - Camelia 2.pdf"
@@ -738,6 +763,11 @@
     "artist": "George Michael ",
     "song": " Chareless Whsiper",
     "tabs": "https://mytabs.vercel.app/Tabs/George Michael - Chareless Whisper.pdf"
+  },
+    {
+    "artist": "Gigi ",
+    "song": " 11 Januari",
+    "tabs": "https://mytabs.vercel.app/Tabs/Gigi - 11 Januari.pdf"
   },
   {
     "artist": "Gigi ",
@@ -1780,6 +1810,11 @@
     "tabs": "https://mytabs.vercel.app/Tabs/ST12 - Saat Terakhir.pdf"
   },
   {
+    "artist": "Starlet ",
+    "song": " Tergila Padamu",
+    "tabs": "https://mytabs.vercel.app/Tabs/Starlet - Tergila Padamu.pdf"
+  },
+  {
     "artist": "Steelheart ",
     "song": " She's Gone",
     "tabs": "https://mytabs.vercel.app/Tabs/Steelheart - She's Gone.pdf"
@@ -1891,7 +1926,7 @@
   },
     {
     "artist": "The Mercy's ",
-    "song": " Biarku Sendiri",
+    "song": " Bunga Mawar",
     "tabs": "https://mytabs.vercel.app/Tabs/The Mercy's - Bunga Mawar.pdf"
   },
   {
@@ -2122,6 +2157,11 @@
   {
     "artist": "Utha Likumahuwa ",
     "song": " Esok Kan Masih Ada",
+    "tabs": "https://mytabs.vercel.app/Tabs/Utha Likumahuwa - Esok Kan Masih Ada.pdf"
+  },
+    {
+    "artist": "Utha Likumahuwa ",
+    "song": " Untuk Apa Lagi",
     "tabs": "https://mytabs.vercel.app/Tabs/Utha Likumahuwa - Esok Kan Masih Ada.pdf"
   },
     {
